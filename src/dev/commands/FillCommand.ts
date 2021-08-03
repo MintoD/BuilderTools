@@ -1,5 +1,3 @@
-/// <reference path="../error/SyntaxError.ts" />
-
 const FILL_COMMAND = {
     cmdName: "//fill",
     callback: (id: ItemInstance) => {

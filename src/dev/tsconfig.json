@@ -22,7 +22,6 @@
 		"commands/WandCommand.ts",
 		"commands/FillCommand.ts",
 		"math/Math.ts",
-		"error/SyntaxError.ts",
 		"events/EventListener.ts",
 		"jobs/Filler.ts"
 	],
