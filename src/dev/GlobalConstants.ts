@@ -8,21 +8,11 @@
                                         by MintoD
 */
 
-enum WAND {
-    stringID = "buildertools.wand",
-    name = "Builder Wand",
+interface IDBlock {
+    id: number;
+    data: number;
 }
 
-IDRegistry.genItemID(WAND.stringID);
-
-Item.createItem(
-    WAND.stringID,
-    WAND.name,
-    {
-        name: "wand",
-        data: 0,
-    },
-    {
-        stack: 1,
-    }
-);
+namespace GlobalConstants {
+    export const MAX_HEIGHT: number = 0x100;
+}

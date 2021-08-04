@@ -3,7 +3,7 @@
         "info": {
             "name": "BuilderTools",
             "author": "MintoD",
-            "version": "1.0.0-alpha",
+            "version": "1.0.0-alpha2",
             "description": "Advanced WorldEdit"
         },
         "api": "CoreEngine"

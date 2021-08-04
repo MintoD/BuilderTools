@@ -12,5 +12,10 @@ Callback.addCallback("NativeCommand", (cmd) => {
         return;
     }
 
+    /*if(Selector.pos1.x == undefined || Selector.pos2.x == undefined) {
+        Game.message(Native.Color.DARK_RED + "Please select the position first");
+        return;
+    }*/
+
     FILL_COMMAND.callback(Player.getCarriedItem());
 });

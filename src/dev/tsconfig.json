@@ -16,14 +16,17 @@
 	],
 	"include": [
 		"Selector.ts",
+		"GlobalConstants.ts",
 		"Wand.ts",
 		"commands/IdCommand.ts",
+		"commands/ReplaceCommand.ts",
 		"commands/HelpCommand.ts",
 		"commands/WandCommand.ts",
 		"commands/FillCommand.ts",
 		"math/Math.ts",
 		"events/EventListener.ts",
-		"jobs/Filler.ts"
+		"jobs/Filler.ts",
+		"jobs/Replacement.ts"
 	],
 	"files": [
 		"/home/toby/Publish/BuilderTools/toolchain/declarations/android-declarations.d.ts",

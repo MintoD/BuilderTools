@@ -1,4 +1,4 @@
-![Code inspector](https://www.code-inspector.com/project/25478/status/svg)
+![Code inspector](https://www.code-inspector.com/project/26010/score/svg)
 
 # BuilderTools
 
