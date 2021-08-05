@@ -1,5 +1,6 @@
 # BuilderTools - Advanced WorldEdit for InnerCore
 
+[![CircleCI](https://circleci.com/gh/MintoD/BuilderTools/tree/main.svg?style=svg)](https://circleci.com/gh/MintoD/BuilderTools/tree/main)
 ![Code inspector](https://www.code-inspector.com/project/26010/score/svg)
 
 ## BuilderTools
