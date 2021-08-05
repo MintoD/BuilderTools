@@ -1,16 +1,13 @@
-const ID_COMMAND = {
-    cmdName: "//id",
-    callback: () => {
-        Game.tipMessage(
-            `ID: ${Player.getCarriedItem().id}:${Player.getCarriedItem().data}`
-        );
-    },
-};
+/// <reference path="./Command.ts" />
 
-Callback.addCallback("NativeCommand", (cmd) => {
-    const command = cmd.split(" ");
+enum ID_COMMAND {
+    name = "//id"
+}
 
-    if (command[0] == ID_COMMAND.cmdName) {
-        ID_COMMAND.callback();
-    }
+const idCmd = new Command(ID_COMMAND.name, false);
+
+idCmd.execute(() => {
+    Game.tipMessage(
+        `ID: ${Player.getCarriedItem().id}:${Player.getCarriedItem().data}`
+    );
 });

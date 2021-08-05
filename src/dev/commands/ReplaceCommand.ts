@@ -1,22 +1,14 @@
-const REPLACE_COMMAND = {
-    cmdName: "//replace",
-    callback: (findBlock: IDBlock, replaceBlock: ItemInstance) => {
-        Replacement.replace(findBlock, replaceBlock);
-    }
+enum REPLACE_COMMAND {
+    name = "//replace",
 }
 
-Callback.addCallback("NativeCommand", (command) => {
-    const cmd = command.split(" ");
+const replaceCmd = new Command(REPLACE_COMMAND.name, false);
 
-    if(cmd[0] !== REPLACE_COMMAND.cmdName) {
-        return;
-    }
+replaceCmd.execute((args) => {
+    const findBlock: any[] = args[1].split(":");
 
-    if(cmd[1] == "") {
-        Game.message(Native.Color.DARK_RED + `Usage: ${REPLACE_COMMAND.cmdName} id:data id:data\n Example: //replace 1:0 2:0 It will find stone and replace it into grass`);
-    }
-
-    const findBlock = cmd[1].split(":");
-
-    REPLACE_COMMAND.callback({id: findBlock[0], data: findBlock[1]}, Player.getCarriedItem());
+    Replacement.replace(
+        { id: findBlock[0], data: findBlock[1] },
+        Player.getCarriedItem()
+    );
 });

@@ -1,14 +1,9 @@
-const WAND_COMMAND = {
-    cmdName: "//wand",
-    callback: () => {
-        Player.addItemToInventory(Item.getNumericId(WAND.stringID), 1, 0);
-    },
+enum WAND_COMMAND {
+    name = "//wand",
 };
 
-Callback.addCallback("NativeCommand", (cmd) => {
-    const command = cmd.split(" ");
+const wandCmd = new Command(WAND_COMMAND.name, false);
 
-    if (command[0] == WAND_COMMAND.cmdName) {
-        WAND_COMMAND.callback();
-    }
+wandCmd.execute(() => {
+    Player.addItemToInventory(Item.getNumericId(WAND.stringID), 1, 0);
 });

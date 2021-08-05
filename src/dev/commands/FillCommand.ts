@@ -1,21 +1,18 @@
-const FILL_COMMAND = {
+/// <reference path="./Command.ts" />
+
+const A = {
     cmdName: "//fill",
     callback: (id: ItemInstance) => {
         Filler.flatFill(id)
     },
 };
 
-Callback.addCallback("NativeCommand", (cmd) => {
-    const command = cmd.split(" ");
+enum FILL_COMMAND {
+    name = "//fill"
+}
 
-    if (command[0] !== FILL_COMMAND.cmdName) {
-        return;
-    }
+const fillCmd = new Command(FILL_COMMAND.name, false);
 
-    /*if(Selector.pos1.x == undefined || Selector.pos2.x == undefined) {
-        Game.message(Native.Color.DARK_RED + "Please select the position first");
-        return;
-    }*/
-
-    FILL_COMMAND.callback(Player.getCarriedItem());
+fillCmd.execute(() => {
+    Filler.flatFill(Player.getCarriedItem());
 });
