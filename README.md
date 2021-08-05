@@ -41,6 +41,7 @@ Because BuilderTools will always update and never stop
 | //replace |       | Replace blocks in selected area |
 
 ## License
+
 Copyright (c) MintoD. All rights reserved.
 
-Licensed under the [GPLv3](https://github.com/MintoD/BuilderTools/blob/main/LICENSE) license.
+Licensed under the [GPL-3.0](https://github.com/MintoD/BuilderTools/blob/main/LICENSE) license.
