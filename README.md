@@ -3,15 +3,12 @@
 [![CircleCI](https://circleci.com/gh/MintoD/BuilderTools/tree/main.svg?style=svg)](https://circleci.com/gh/MintoD/BuilderTools/tree/main)
 ![Code inspector](https://www.code-inspector.com/project/26010/score/svg)
 
-## BuilderTools
+## BuilderTools - EOL
 
 ### What is it ?
 
 BuilderTools is a mod that helps builders in Minecraft build their construction faster with some commands like fill, replace, etc.
 
-### Why I should use it ?
-
-Because BuilderTools will always update and never stop
 
 ## Installation
 
